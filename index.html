@@ -1,149 +1,292 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ruby/Javascipt developer</title>
+    <title>Viacheslav Kozlov — Ruby on Rails Developer</title>
+    <meta name="description" content="Ruby on Rails Developer with 10+ years of experience delivering scalable, testable, and production-ready applications." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="desktop-photo">
-      <img src="images/me.desktop.jpeg" alt="Viacheslav Kozlov">
-    </div>
 
-    <div class="scrollable-content">
-      <div class="mobile-photo">
-        <img src="images/me.mobile.jpeg" alt="Viacheslav Kozlov">
+    <!-- Fixed Sidebar (Left) -->
+    <aside class="sidebar">
+      <div class="sidebar-photo">
+        <img src="images/me.desktop.jpeg" alt="Viacheslav Kozlov">
       </div>
-      
-      <section class="intro white">
-        <div class="content">
-          <h2 class="poppins-bold">Viacheslav Kozlov</h2>
-          <p>Ruby on Rails Developer with 10+ years of experience delivering scalable, testable, and production-ready applications for tech startups.</p>
-          <p>Passionate about writing clean code, implementing robust testing, and transforming business needs into efficient architectures.</p>
-          <p>Leveraged entrepreneurial and marketing background to align technical solutions with business goals.</p>
-          <p>Top-rated Upwork developer with 9 years and 7,500 hours experience.</p>
+      <div class="sidebar-accent"></div>
+      <div class="sidebar-info">
+        <p class="sidebar-name">Viacheslav Kozlov</p>
+        <p class="sidebar-label">Ruby on Rails Developer</p>
+        <div class="sidebar-contact">
+          <a href="mailto:viacheslav2049@gmail.com" rel="nofollow">
+            Get in touch
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
         </div>
-      </section>
+      </div>
+    </aside>
 
-      <!-- Projects -->
+    <!-- Scrollable Content (Right) -->
+    <main class="content-wrapper">
 
-      <section class="projects blue">
-        <div class="content">
-          <h1 class="poppins-bold">Experience</h1>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container">
+          <!-- <p class="hero-label">Ruby on Rails Developer</p> -->
+          <p class="hero-label">Viacheslav Kozlov</p>
+          <!-- <h1 class="hero-title">13+ years helping business grow</h1> -->
+          <p class="hero-description">
+            "I help entrepreneurs and businesses turn ideas into real, working products. As a former startup co-founder, I understand what it takes to build and scale from the ground up—and I bring that experience into every project."
 
-          <div class="project">
-            <div class="description">
-              <h2 class="poppins-bold"><a href="https://tipmetric.com">Tipmetric.com</a> - restaurant tips distribution made simple.</h2>
-              <p class='year-role'>2017-2025 | <span class="role">Lead developer</span></p>
-              <ul>
-                <li>Built MVP in 2 weeks, launching long-term product development</li>
-                <li>Integrated 10 restaurant financial APIs (Brink, Toast, Square, etc.)</li>
-                <li>Delivered 10+ performant multi-format (CSV, Excel) reports</li>
-                <li>Implemented full-stack architecture using Ruby on Rails</li>
-                <li>Ensured stable production delivery and robust testing using RSpec and Cuprite</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="description">
-              <h2 class="poppins-bold"><a href="https://questplanet.ru">Questplanet.ru</a> - city adventure services.</h2>
-              <p class='year-role'>2014-2020 | <span class="role">Lead developer, Cofounder</span></p>
-             <ul>
-                <li>Co-founded and led IT development and design</li>
-                <li>Maintained uninterrupted development over 4+ years</li>
-                <li>Built and maintained production-level Rails application</li>
-                <li>Achieved ~600 test cases with RSpec and Capybara</li>
-                <li>Sold ownership stake to partners in 2020</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="description">
-              <h2 class="poppins-bold"><a href="https://apps.apple.com/us/app/papr-news-reader/id1389981842">Papr</a> - new way of reading.</h2>
-              <p class='year-role'>2014-2016 | <span class="role">Web Developer</span></p>
-              <ul>
-                <li>Built web scraping and RSS integration pipelines</li>
-                <li>Developed online text editing interface</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="description">
-              <h2 class="poppins-bold"><a href="https://joany.com">Impacthealth</a>- healthcare that fits your needs</h2>
-              <p class='year-role'>2015 | <span class="role">Web Developer</span></p>
-              <ul>
-                <li>Added responsive feedback forms (HTML, CSS, JavaScript)</li>
-                <li>Improved layouts and visual presentation for landing pages</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="description">
-              <h2 class="poppins-bold"><a href="https://www.indiegogo.com/projects/uncoverage-news-that-works-for-you">Uncoverage</a> - platform for support investigative journalism.</h2>
-              <p class='year-role'>2013-2015 | <span class="role">Web Developer</span></p>
-              <ul>
-                <li>Developed widgets, subscriptions, and payment systems</li>
-                <li>Worked across frontend (Backbone, Marionette) and backend (Ruby on Rails)</li>
-                <li>Integrated Balanced Payments API</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education -->
-
-      <section class="white">
-        <div class="content">
-          <h1 class="poppins-bold">Education</h1>
-          <p>I am a self-taught full-stack developer with a passion for building tailored, reliable web solutions. Self-education is one of my main values in all aspects of life. You can grow only if you educate yourself consistently.</p>
-          <p>Continuously enhance expertise through advanced coursework and self-study.</p>
-          <p><span class="poppins-bold">Harvard University: </span> CS50 Cybersequrity. // In progress </p>
-          <p><span class="poppins-bold">Harvard University: </span> CS50's SQL. Introduction to Databases with SQL (SQL, SQLite, Postgres)</p>
-          <p><span class="poppins-bold">Harvard University: </span> CS50x. Introduction to Computer Science (C, Python, Web)</p>
-          <p><span class="poppins-bold">GeekBrains:</span> System Administration. TCP/IP</p>
-          <p><span class="poppins-bold">GeekBrains:</span> Linux. Administration and Configuration.</p>
-          <p><span class="poppins-bold">Plekhanov Economic University</span>: Economics. Marketing (2002-2007)</p>
-        </div>
-      </section>
-
-      <!-- Skills -->
-
-      <section class="white">
-        <div class="content">
-          <h1 class="poppins-bold">Tech skills</h1>
-          <p>
-            <span class="accent">Frontend</span> - Javascript, Hotwire, Stimulus, Coffeescript, Backbone.js, Marionette.js, CSS, Html <br>
-            <span class="accent">Backend</span> - Ruby, Ruby on Rails, Sidekiq<br>
-            <span class="accent">Integrations</span> - AWS, Stripe, Robokassa, Yandex Kassa, Yandex Translate API, Telegram API, Restaurant Financial Services (Brink, Toast, Paychex, Focus, 7Shift, Paycom, Square)<br>
-            <span class="accent">CI/CD</span> - Capistrano, Rubocop, Git<br>
-            <span class="accent">Errors</span> - Rollbar<br>
-            <span class="accent">Testing</span> - Rspec, Capybara, Cucumber, Cuprite<br>
-            <span class='accent'>Dbs</span> - Postgres, SQLite3, MongoDB, Redis<br>
-            <span class='accent'>Server</span> - Unix, Docker, Docker Compose<br>
-            <span class='accent'>Other</span> - C, Pascal, Python, NeoVim<br>
+            <!-- I’m also a top-rated Upwork developer with 7,500+ hours delivering results for tech startups. -->
           </p>
+          <!-- <p class="hero-description"> -->
+          <!--   <br> -->
+          <!--   Top-rated Upwork developer — 7,500+ hours delivered for tech startups. -->
+          <!-- </p> -->
         </div>
       </section>
 
-      <!-- Personal -->
+      <!-- Experience — Dark Section -->
+      <section class="section-dark" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-number">01</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
 
-      <section class="white">
-        <div class="content">
-          <h1 class="poppins-bold">Personal</h1>
-          <p>
-            Interested in travelling, qigong, meditations, chinese tea ceremonies.
+          <p class="section-intro">
+            You can find my most important projects below, that are primarly relate to Ruby and Ruby on Rails world. Now I concentrate on building microservice architectures and implementing AI into business ecosystems.
           </p>
+
+          <div class="experience-list">
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-period">2017 — 2025</span>
+                <span class="experience-role">Lead Developer</span>
+              </div>
+              <div class="experience-body">
+                <h3><a href="https://tipmetric.com" target="_blank" rel="noopener">Tipmetric ↗</a></h3>
+                <p class="subtitle">TipMetric is a platform for restaurants that automates tip pooling and payroll workflows—eliminating spreadsheet errors, ensuring transparent tip distribution, reducing disputes and legal risks, and streamlining payroll processing.</p>
+                <ul>
+                  <li>Built MVP in 2 weeks, launching long-term product development</li>
+                  <li>Integrated 10 restaurant financial APIs (Brink, Toast, Square)</li>
+                  <li>Delivered 10+ performant multi-format reports (CSV, Excel)</li>
+                  <li>Full-stack architecture in Ruby on Rails with RSpec and Cuprite</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-period">2014 — 2020</span>
+                <span class="experience-role">Co-founder / CTO</span>
+              </div>
+              <div class="experience-body">
+                <h3><a href="https://questplanet.ru" target="_blank" rel="noopener">Questplanet ↗</a></h3>
+                <p class="subtitle">A mobile-first platform for interactive city adventures, where users complete location-based quests along tourist routes and pay to participate in themed experiences.</p>
+                <ul>
+                  <li>Co-founded and led IT development and design for 4+ years</li>
+                  <li>Led IT strategy while designing and implementing technical solutions aligned with business goals</li>
+                  <li>Built production-level Rails application with ~600 RSpec test cases</li>
+                  <li>Sold ownership stake to partners in 2020</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-period">2014 — 2016</span>
+                <span class="experience-role">Web Developer</span>
+              </div>
+              <div class="experience-body">
+                <h3><a href="https://apps.apple.com/us/app/papr-news-reader/id1389981842" target="_blank" rel="noopener">Papr ↗</a></h3>
+                <p class="subtitle">Papr is a platform that cuts through information noise by delivering one concise, meaningful daily digest per source—aggregating content from channels like YouTube, RSS, and more into a single, streamlined feed.</p>
+                <ul>
+                  <li>Built web scraping and RSS integration pipelines</li>
+                  <li>Developed online text editing interface</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-period">2015</span>
+                <span class="experience-role">Web Developer</span>
+              </div>
+              <div class="experience-body">
+                <h3><a href="https://joany.com" target="_blank" rel="noopener">Impacthealth ↗</a></h3>
+                <p class="subtitle">Impacthealth is a smart platform that matches users with the most affordable healthcare plans by analyzing their needs through a simple questionnaire.</p>
+                <ul>
+                  <li>Added responsive feedback forms (HTML, CSS, JavaScript)</li>
+                  <li>Improved layouts and visual presentation for landing pages</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="experience-item">
+              <div class="experience-meta">
+                <span class="experience-period">2013 — 2015</span>
+                <span class="experience-role">Web Developer</span>
+              </div>
+              <div class="experience-body">
+                <h3><a href="https://www.indiegogo.com/projects/uncoverage-news-that-works-for-you" target="_blank" rel="noopener">Uncoverage ↗</a></h3>
+                <p class="subtitle">Uncoverage is a platform that empowers investigative journalists to fund their work through embedded widgets and recurring subscriptions from supporters.</p>
+                <ul>
+                  <li>Developed widgets, subscriptions, and payment systems</li>
+                  <li>Frontend (Backbone, Marionette) + Backend (Ruby on Rails)</li>
+                  <li>Integrated Balanced Payments API</li>
+                </ul>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
-    </div>
+
+      <!-- Education — Light Section -->
+      <section id="education">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-number">02</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <p class="section-intro">
+            Self-taught developer with a deep passion for building tailored, reliable web solutions. 
+            Self-education is one of my main values in all aspects of life — you can only grow if you 
+            educate yourself consistently. Continuously enhance expertise through advanced coursework and self-study.
+          </p>
+
+          <div class="education-list">
+            <div class="education-row">
+              <span class="education-row-institution">Lauro Fialho Müller (Udemy)</span>
+              <span class="education-row-course">Doker and Cubernites Containerization</span>
+            </div><div class="education-row">
+              <span class="education-row-institution">Harvard University</span>
+              <span class="education-row-course">CS50 Cybersecurity — In progress</span>
+            </div>
+            <div class="education-row">
+              <span class="education-row-institution">Harvard University</span>
+              <span class="education-row-course">CS50's SQL — Introduction to Databases with SQL (SQL, SQLite, Postgres)</span>
+            </div>
+            <div class="education-row">
+              <span class="education-row-institution">Harvard University</span>
+              <span class="education-row-course">CS50x — Introduction to Computer Science (C, Python, Web)</span>
+            </div>
+            <div class="education-row">
+              <span class="education-row-institution">GeekBrains</span>
+              <span class="education-row-course">System Administration — TCP/IP</span>
+            </div>
+            <div class="education-row">
+              <span class="education-row-institution">GeekBrains</span>
+              <span class="education-row-course">Linux — Administration and Configuration</span>
+            </div>
+            <div class="education-row">
+              <span class="education-row-institution">Plekhanov Economic University</span>
+              <span class="education-row-course">Economics — Marketing (2002–2007)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills — Dark Section -->
+      <section class="section-dark" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-number">03</p>
+            <h2 class="section-title">Tech Skills</h2>
+          </div>
+
+          <p class="section-intro">
+            My tech skills are focused on delivering robust, scalable web-applications for web-startups. Tech stack is mainly built around Ruby and Javascript language to deliver full-stack development.
+          </p>
+
+          <p class="section-intro">
+            Now I actively use AI for coding (Claude Code, Qwen) and integrate AI based solutions for businesses. Correctly used, these tools can dramattically increase performance of development and bring a lot of value to business. 
+          </p>
+
+          <div class="skills-list">
+            <div class="skills-row">
+              <span class="skills-row-label">Frontend</span>
+              <span class="skills-row-value">Javascript, Hotwire, Stimulus, Coffeescript, Backbone.js, Marionette.js, CSS, Html</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Backend</span>
+              <span class="skills-row-value">Ruby, Ruby on Rails, Sidekiq</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Integrations</span>
+              <span class="skills-row-value">AWS, Stripe, Robokassa, Yandex Kassa, Telegram Bot API, Restaurant Financial APIs, Mail services (Brevo, Unisender)</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">CI/CD</span>
+              <span class="skills-row-value">Capistrano, Rubocop, Git, Github Actions</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Testing</span>
+              <span class="skills-row-value">Rspec, Capybara, Cucumber, Cuprite</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Databases</span>
+              <span class="skills-row-value">Postgres, SQLite3, MongoDB, Redis</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Infrastructure</span>
+              <span class="skills-row-value">Unix, Docker, Docker Compose, Kubernetes, Apache Kafka, RabbitMQ</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Monitoring & Profiling</span>
+              <span class="skills-row-value">Prometheus, Grafana, Loki</span>
+            </div>
+            <div class="skills-row">
+              <span class="skills-row-label">Other</span>
+              <span class="skills-row-value">C, Pascal, Python, NeoVim</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Personal — Light Section -->
+      <!-- <section id="personal"> -->
+      <!--   <div class="container"> -->
+      <!--     <div class="section-header"> -->
+      <!--       <p class="section-number">04</p> -->
+      <!--       <h2 class="section-title">Personal</h2> -->
+      <!--     </div> -->
+
+      <!--     <div class="personal-content"> -->
+      <!--       <p class="highlight">Travelling, qigong, meditations, and chinese tea ceremonies.</p> -->
+      <!--       <p></p> -->
+      <!--     </div> -->
+      <!--   </div> -->
+      <!-- </section> -->
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-inner">
+          <p class="footer-copy">&copy; 2026 Viacheslav Kozlov</p>
+          <!-- <a href="mailto:your.email@example.com" class="footer-cta"> -->
+          <!--   Get in touch -->
+          <!--   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> -->
+          <!--     <line x1="5" y1="12" x2="19" y2="12"/> -->
+          <!--     <polyline points="12 5 19 12 12 19"/> -->
+          <!--   </svg> -->
+          <!-- </a> -->
+        </div>
+      </footer>
+
+    </main>
+
   </body>
 </html>
-
