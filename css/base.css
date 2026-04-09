@@ -74,7 +74,6 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(100%) contrast(1.05);
 }
 
 .sidebar-photo .photo-mobile {
