@@ -59,6 +59,8 @@ body {
   height: 100vh;
   overflow: hidden;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-photo {
@@ -73,6 +75,10 @@ body {
   object-fit: cover;
   display: block;
   filter: grayscale(100%) contrast(1.05);
+}
+
+.sidebar-photo .photo-mobile {
+  display: none;
 }
 
 .sidebar-accent {
@@ -100,7 +106,6 @@ body {
   color: var(--color-text-inverse);
   line-height: 1.2;
   margin-bottom: var(--space-1);
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar-label {
@@ -109,8 +114,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: var(--space-3);
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--space-2);
 }
 
 .sidebar-contact a {
@@ -498,16 +502,35 @@ body {
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+
   .sidebar {
     position: relative;
     width: 100%;
     height: auto;
-    display: block;
+    overflow: visible;
   }
 
   .sidebar-photo {
-    width: 100%;
-    max-height: 400px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-3);
+  }
+
+  .sidebar-photo .photo-desktop {
+    display: none;
+  }
+
+  .sidebar-photo .photo-mobile {
+    display: block;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 3px solid var(--color-border-dark);
   }
 
   .sidebar-accent {
@@ -515,7 +538,27 @@ body {
   }
 
   .sidebar-info {
-    padding: var(--space-4);
+    position: static;
+    text-align: center;
+    padding: 0 var(--space-4) var(--space-5);
+  }
+
+  .sidebar-name {
+    font-size: 1.5rem;
+  }
+
+  .sidebar-label {
+    margin-bottom: var(--space-3);
+  }
+
+  .sidebar-contact a {
+    border-color: var(--color-border-dark);
+    color: var(--color-text);
+  }
+
+  .sidebar-contact a:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
   }
 
   .content-wrapper {
@@ -568,5 +611,10 @@ body {
     flex-direction: column;
     gap: var(--space-3);
     text-align: center;
+  }
+
+  .sidebar-photo .photo-mobile {
+    width: 120px;
+    height: 120px;
   }
 }
